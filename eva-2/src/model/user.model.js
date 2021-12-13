@@ -6,7 +6,7 @@ const userSchema = new Schema({
     email:{type:String,required:true},
     password:{type:String,required:true},
     profile_photo_url:[{type:String,required:true}],
-    // roles:[{type:String,required:true}]
+    roles:{type:String,required:true}
 },{
     timestamps:true,
     versionKey:false,

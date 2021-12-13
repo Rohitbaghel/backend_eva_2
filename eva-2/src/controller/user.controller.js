@@ -10,7 +10,7 @@ router.get("" , async (req, res) => {
     res.send(user)
 })
 
-router.post("" ,upload.any("photo"), async (req, res) => {
+router.post("" ,upload.any("profile_photo_url"), async (req, res) => {
 try{
     const filepath = req.files.map(file => file.path)
     const user = await User.create({

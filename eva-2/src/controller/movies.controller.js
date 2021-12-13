@@ -18,7 +18,7 @@ try{
         actors: req.body.actors,
         languages: req.body.languages,
         poster_url :filepath,
-        directors: req.body.role
+        directors: req.body.directors,
     })
 return res.status(201).json(movies)
 }catch(err){
