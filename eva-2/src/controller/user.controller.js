@@ -18,7 +18,7 @@ try{
         email: req.body.email,
         password: req.body.password,
         profile_photo_url:filepath,
-        role: req.body.role
+        roles: req.body.roles
     })
 return res.status(201).json(user)
 }catch(err){

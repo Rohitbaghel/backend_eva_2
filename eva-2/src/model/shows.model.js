@@ -9,7 +9,7 @@ const showSchema = new Schema({
         required:true
     },
     total_seats:{type:Number,required:true},
-    screen:{
+    screens:{
         type:Schema.Types.ObjectId,
         ref:"screen",
         required:true
